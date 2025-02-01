@@ -35,4 +35,15 @@ let responses = 0;
 do {
     console.log(`Collecting responses #${responses}`);
     responses++;
-} while (responses < 3);
+} while (responses < 3)
+
+// Task 5: For...In Loop
+let employee = {
+    name: "Alice",
+    position: "Manager",
+    salary: 75000
+}; // object employee
+
+for (let key in employee) {
+    console.log(`${key}: ${employee[key]}`);
+}

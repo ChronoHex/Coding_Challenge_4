@@ -20,7 +20,7 @@ for (let i = 0; i < sales.length; i++) {
 console.log(`Total sales: $${totalSales}`);
 
 // Task 3: While Loop
-let stock = 10;
+let stock = 10; // Current stock
 
 while (stock > 0) {
     console.log(`Stock remaining: ${stock}`);
@@ -46,4 +46,11 @@ let employee = {
 
 for (let key in employee) {
     console.log(`${key}: ${employee[key]}`);
+}
+
+// For...Of Loop
+let products = ["Laptop", "Mouse", "Keyboard"]; // list of products
+
+for (let product of products) {
+    console.log(`Product: ${product}`);
 }

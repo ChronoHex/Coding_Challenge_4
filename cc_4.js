@@ -33,7 +33,7 @@ console.log("Stock depleted")
 let responses = 0;
 
 do {
-    console.log(`Collecting responses #${responses}`);
+    console.log(`Collecting responses: ${responses}`);
     responses++;
 } while (responses < 3)
 
@@ -54,3 +54,10 @@ let products = ["Laptop", "Mouse", "Keyboard"]; // list of products
 for (let product of products) {
     console.log(`Product: ${product}`);
 }
+
+// Task 7: forEach() Method
+let orders = [101, 102, 103]; // array of orders
+
+orders.forEach(order => {
+    console.log(`order ID: ${order}`)
+}); // logging of order IDs

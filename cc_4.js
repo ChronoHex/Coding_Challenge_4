@@ -63,9 +63,18 @@ orders.forEach(order => {
 }); // logging of order IDs
 
 // Task 8: Function Declaration
-let tax = calculateTax(1000, 0.07);
-
 function calculateTax(amount, taxRate) {
     return amount * taxRate;
 }
+let tax = calculateTax(1000, 0.07);
+
 console.log(`Tax: $${tax}`);
+
+// Task 9: Function Expressions
+const applyDiscount = function(price, discountPercentage){
+    return price - (price * (discountPercentage / 100));
+};
+
+let discountedPrice = applyDiscount (100, 10)
+
+console.log(`Discounted price: $${discountedPrice}`);
